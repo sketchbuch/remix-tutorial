@@ -3,7 +3,8 @@
   "terminals": [
     {
       "name": "Remix",
-      "focus": true
+      "focus": true,
+      "command": "nvm use"
     }
   ]
 }
