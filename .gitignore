@@ -3,5 +3,5 @@
 !.vscode/terminals.json
 
 # Files
-.code-workspace
-.DS_Store
+*.code-workspace
+*.DS_Store
