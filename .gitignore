@@ -5,3 +5,9 @@
 # Files
 *.code-workspace
 *.DS_Store
+
+# Folders
+/.cache
+/build
+/public/build
+node_modules
