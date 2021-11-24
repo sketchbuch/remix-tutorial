@@ -1,0 +1,7 @@
+# VSCode
+.vscode/**/*
+!.vscode/terminals.json
+
+# Files
+.code-workspace
+.DS_Store
