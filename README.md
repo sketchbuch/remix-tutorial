@@ -8,6 +8,7 @@
 4. [Styling - 1:13:06](https://youtu.be/hsIWJpuxNj0?t=4386)
 5. [Database - 1:35:24](https://youtu.be/hsIWJpuxNj0?t=5724)
 6. [Mutations - 2:18:38](https://youtu.be/hsIWJpuxNj0?t=8318)
+7. [Authentication - 2:47:15](https://youtu.be/hsIWJpuxNj0?t=10035)
 
 # Github
 
