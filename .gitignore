@@ -3,8 +3,10 @@
 !.vscode/terminals.json
 
 # Files
+.env
 *.code-workspace
 *.DS_Store
+/prisma/dev.db
 
 # Folders
 /.cache
