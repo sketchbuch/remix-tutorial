@@ -5,6 +5,11 @@
       "name": "Remix",
       "focus": true,
       "command": "nvm use"
+    },
+    {
+      "name": "Prisma Studio",
+      "focus": true,
+      "command": "nvm use"
     }
   ]
 }
