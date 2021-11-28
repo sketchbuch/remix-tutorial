@@ -15,3 +15,8 @@
 ## Github
 
 - Tutorial repo: https://github.com/kentcdodds/remix-tutorial-walkthrough
+
+## URLs
+
+- Dev Server: http://localhost:3000/
+- Prisma Studio: http://localhost:5555/
