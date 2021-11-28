@@ -20,3 +20,7 @@
 
 - Dev Server: http://localhost:3000/
 - Prisma Studio: http://localhost:5555/
+
+## Misc
+
+- let rather than const everywhere because this is what the remix team prefer and I couldn't be bothered to change them.
