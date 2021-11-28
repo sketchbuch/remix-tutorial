@@ -25,10 +25,12 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
+    "db:studio": "npx prisma studio",
+    "db:seed": "npx prisma db seed",
+    "db:update": "npx prisma db push",
+    "db:reset": "npm run db:update --force-reset && db:seed",
     "dev": "remix dev",
     "postinstall": "remix setup node",
-    "prisma:db.update": "npx prisma db push",
-    "prisma:studio": "npx prisma studio",
     "start": "remix-serve build"
   },
   "dependencies": {
