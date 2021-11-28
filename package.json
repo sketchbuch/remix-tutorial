@@ -27,6 +27,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "postinstall": "remix setup node",
+    "prisma:db.update": "npx prisma db push",
+    "prisma:studio": "npx prisma studio",
     "start": "remix-serve build"
   },
   "dependencies": {
