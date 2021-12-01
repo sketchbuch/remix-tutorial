@@ -2,6 +2,10 @@
 
 ***https://youtu.be/hsIWJpuxNj0***
 
+***https://remix.run/docs/en/v1/tutorials/jokes***
+
+"...This tutorial is the comprehensive way to getting an overview of the primary APIs available in Remix. By the end, you'll have a full application you can show your mom, significant other, or dog and I'm sure they'll be just as excited about Remix as you are (though I make no guarantees)..."
+
 ## Tagged Steps:
 
 1. [Prep - 13:43](https://youtu.be/hsIWJpuxNj0?t=823)
@@ -12,6 +16,7 @@
 6. [Mutations - 2:18:38](https://youtu.be/hsIWJpuxNj0?t=8318)
 7. [Authentication - 2:47:15](https://youtu.be/hsIWJpuxNj0?t=10035)
 8. [Unexpected Errors - 4:19:20](https://youtu.be/hsIWJpuxNj0?t=15560)
+8. [Expected Errors - 4:34:13](https://youtu.be/hsIWJpuxNj0?t=16453)
 
 ## Github
 
@@ -22,6 +27,19 @@
 - Dev Server: http://localhost:3000/
 - Prisma Studio: http://localhost:5555/
 
+## Scripts
+
+| Name        | Description                                   |
+| ----------- | --------------------------------------------- |
+| build       | Build the production release                  |
+| db:studio   | Run Prisma Studio                             |
+| db:seed     | Seed the DB with the seed file                |
+| db:update   | Update the DB - use after changing the schema |
+| db:reset    | Force a scheme update and reseed the DB       |
+| dev         | Start the dev server                          |
+| postinstall | Something from remix - not sure what it does  |
+| start       | Start the production release                  |
+
 ## Misc
 
-- let rather than const everywhere because this is what the remix team prefer and I couldn't be bothered to change them.
+- The turtorial uses "let" rather than "const" everywhere because this is what the remix team prefer and I couldn't be bothered to change them.
