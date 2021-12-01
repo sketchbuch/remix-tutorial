@@ -1,5 +1,5 @@
 import type { ActionFunction } from "remix";
-import { useActionData, redirect } from "remix";
+import { redirect, useActionData } from "remix";
 import { db } from "~/utils/db.server";
 import { requireUserId } from "~/utils/session.server";
 
@@ -124,6 +124,14 @@ export default function NewJokeRoute() {
           </button>
         </div>
       </form>
+    </div>
+  );
+}
+
+export function ErrorBoundary() {
+  return (
+    <div className="error-container">
+      Something unexpected went wrong. Sorry about that.
     </div>
   );
 }
