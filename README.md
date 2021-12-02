@@ -18,6 +18,7 @@
 8. [Unexpected Errors - 4:19:20](https://youtu.be/hsIWJpuxNj0?t=15560)
 9. [Expected Errors - 4:34:13](https://youtu.be/hsIWJpuxNj0?t=16453)
 10. [SEO with Meta tags - 4:58:52](https://youtu.be/hsIWJpuxNj0?t=17932)
+11. [Resource Routes - 5:14:06](https://youtu.be/hsIWJpuxNj0?t=18846)
 
 ## Github
 
