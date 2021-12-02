@@ -19,6 +19,8 @@
 9. [Expected Errors - 4:34:13](https://youtu.be/hsIWJpuxNj0?t=16453)
 10. [SEO with Meta tags - 4:58:52](https://youtu.be/hsIWJpuxNj0?t=17932)
 11. [Resource Routes - 5:14:06](https://youtu.be/hsIWJpuxNj0?t=18846)
+12. [Javascript - 5:20:46](https://youtu.be/hsIWJpuxNj0?t=19246)
+13. [Optimistic UI - 5:32:52](https://youtu.be/hsIWJpuxNj0?t=19972)
 
 ## Github
 
