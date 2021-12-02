@@ -21,6 +21,7 @@
 11. [Resource Routes - 5:14:06](https://youtu.be/hsIWJpuxNj0?t=18846)
 12. [Javascript - 5:20:46](https://youtu.be/hsIWJpuxNj0?t=19246)
 13. [Optimistic UI - 5:32:52](https://youtu.be/hsIWJpuxNj0?t=19972)
+14. [Deployment - 5:52:23](https://youtu.be/hsIWJpuxNj0?t=21142)
 
 ## Github
 
