@@ -1,7 +1,21 @@
-import type { ActionFunction } from "remix";
-import { redirect, useActionData } from "remix";
+import type { ActionFunction, LoaderFunction } from "remix";
+import {
+  Link, redirect, useActionData, useCatch
+} from "remix";
 import { db } from "~/utils/db.server";
-import { requireUserId } from "~/utils/session.server";
+import {
+  getUserId, requireUserId
+} from "~/utils/session.server";
+
+export const loader: LoaderFunction = async ({
+  request
+}) => {
+  const userId = await getUserId(request);
+  if (!userId) {
+    throw new Response("Unauthorized", { status: 401 });
+  }
+  return {};
+};
 
 function validateJokeContent(content: string) {
   if (content.length < 10) {
@@ -27,13 +41,13 @@ type ActionData = {
   };
 };
 
-export let action: ActionFunction = async ({
+export const action: ActionFunction = async ({
   request
 }): Promise<Response | ActionData> => {
-  let userId = await requireUserId(request);
-  let form = await request.formData();
-  let name = form.get("name");
-  let content = form.get("content");
+  const userId = await requireUserId(request);
+  const form = await request.formData();
+  const name = form.get("name");
+  const content = form.get("content");
   if (
     typeof name !== "string" ||
     typeof content !== "string"
@@ -41,23 +55,25 @@ export let action: ActionFunction = async ({
     return { formError: `Form not submitted correctly.` };
   }
 
-  let fieldErrors = {
+  const fieldErrors = {
     name: validateJokeName(name),
     content: validateJokeContent(content)
   };
-  let fields = { name, content };
+  const fields = { name, content };
   if (Object.values(fieldErrors).some(Boolean)) {
     return { fieldErrors, fields };
   }
 
-  let joke = await db.joke.create({
+  const joke = await db.joke.create({
     data: { ...fields, jokesterId: userId }
   });
   return redirect(`/jokes/${joke.id}`);
 };
 
 export default function NewJokeRoute() {
-  let actionData = useActionData<ActionData | undefined>();
+  const actionData = useActionData<
+    ActionData | undefined
+  >();
 
   return (
     <div>
@@ -126,6 +142,19 @@ export default function NewJokeRoute() {
       </form>
     </div>
   );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+
+  if (caught.status === 401) {
+    return (
+      <div className="error-container">
+        <p>You must be logged in to create a joke.</p>
+        <Link to="/login">Login</Link>
+      </div>
+    );
+  }
 }
 
 export function ErrorBoundary() {
